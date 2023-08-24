@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Medidas - Projetos MZ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>Conversor de Medidas</h2>
+    </header>
+    <main>
+        <form>
+            <div>
+                <label for="quantity">Digite a quantidade:</label>
+                <input type="number" name="quantity" id="quantity">
+            </div>
+            <div>
+                <label for="convert">Dê:</label>
+                <select name="convert" id="convert" required>
+                    <option value="m">Metro(s)</option>
+                    <option value="km">Quilômetro(s)</option>
+                    <option value="cm">Centimetro(s)</option>
+                    <option value="mm">Milímetros(s)</option>
+                </select>                
+            </div>
+            <div>
+                <label for="to">Para:</label>
+                <select name="to" id="to" required>
+                    <option value="m">Metro(s)</option>
+                    <option value="km">Quilômetro(s)</option>
+                    <option value="cm">Centimetro(s)</option>
+                    <option value="mm">Milímetros(s)</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Converter">
+            </div>
+            <div>
+                <label for="result">Resultado:</label>
+                <input type="text" value="0" name="result" id="result" disabled>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/mazarotto-dev" target="_blank" rel="noreferrer">Mazarotto Developer</a></p>
+    </footer>
+</body>
+</html>
